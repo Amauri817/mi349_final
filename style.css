@@ -1,0 +1,26 @@
+:root {
+    --main-bg-color: wheat;
+    --main-txt-color: black;
+    --container-width: 60%;
+    --header-bg-color: black;
+    --header-txt-color: white;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+header#Gamble {
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+}
+
+header#Gamble h1{
+    padding: 0;
+    margin: 0;
+}

@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: wheat;
     --main-txt-color: black;
-    --container-width: 60%;
+    --container-width: 80%;
     --header-bg-color: black;
     --header-txt-color: white;
 }
@@ -30,11 +30,8 @@ header#Gamble h1{
 }
 
 img {
-    width: 30%;
-}
-
-li {
-    white-space: nowrap;
+    padding: 2px 30% 1px;
+    width: 35%;
 }
 
 li {
@@ -42,7 +39,12 @@ li {
     display: inline;
 }
 
-.Poker {
+.One {
+    width: var(--container-width);
+    margin: 20px auto;
+}
+
+.Two {
     width: var(--container-width);
     margin: 20px auto;
 }
@@ -53,6 +55,25 @@ li {
     align-items: center;
 }
 
+.btn {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    background-color: green;
+    color: yellow;
+}
 
 
 @media (max-width: 400px) {
@@ -65,4 +86,39 @@ li {
     #Help {
         background: orange;
     }
+}
+
+.SlotM {
+    --box-bg-color: rgb(211, 211, 211);
+    --box-main-color: red;
+    --box-outline-color: blue;
+    --box-glow-color: rgb(235, 98, 8);
+    --box-padding: 2px 5px;
+    --box-shadow-h-offset: 10px;
+    --box-shadow-v-offset: 5px;
+    --box-shadow-blur: 5px;
+}
+
+.SlotM h1{
+    color: var(--box-main-color);
+}
+
+.Poker {
+    --box-bg-color: rgb(211, 211, 211);
+    --box-main-color: red;
+    --box-outline-color: blue;
+    --box-glow-color: rgb(235, 98, 8);
+    --box-padding: 2px 5px;
+    --box-shadow-h-offset: 10px;
+    --box-shadow-v-offset: 5px;
+    --box-shadow-blur: 5px;
+}
+
+.Poker h1{
+    color: var(--box-main-color);
+}
+
+.Help h1{
+    --box-main-color: red;
+    color: var(--box-main-color);
 }
